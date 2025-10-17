@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Animation Portfolio - John Prudlow</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:image" content="<?php echo imagepath ?>john.jpg"/>
+	<link rel="shortcut icon" href="<?php echo thmpath ?>/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" >
+    <!--[if lt IE 9]>
+        <script type="text/javascript">
+            document.createElement("nav");
+            document.createElement("header");
+            document.createElement("footer");
+            document.createElement("section");
+            document.createElement("aside");
+            document.createElement("article");
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <header class="flex flex-col lg:flex-row text-white bg-gradient-to-b from-slate-900 to-blue-900 px-6 lg:px-9 py-5 items-center justify-between w-full z-20">
+        <div class="mobile-header flex items-center justify-between w-full">
+            <h1 class="branding text-5xl tracking-wide uppercase">John Prudlow</h1>
+            <button class="hamburger lg:hidden" onclick="toggleMenu()"><i class="fa-solid fa-bars cursor-pointer text-3xl lg:hidden"></i></button>
+        </div>
+        <nav id="main-menu" class="hidden lg:block">
+            <ul class="flex flex-col items-center lg:flex-row font-semibold uppercase pt-5 pb-2 gap-y-2 lg:p-0 lg:gap-x-6 lg:gap-y-0">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <ul class="social flex gap-x-3">
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid grid-cols-1 xl:grid-cols-4">
+        <section id="about" class="flex flex-col p-6 md:flex-row md:p-0 col-span-1 xl:col-span-3 xl:row-span-1 border-b-1 border-gray-200 gap-6">
+            <div class="container w-full md:w-3/7">
+                <img src="images/john.jpg" alt="John Prudlow" class="container w-75 h-auto md:w-full" />
+            </div>
+            <div class="container p-0 md:p-6 w-full md:w-4/7 self-center">
+                <h2 class="text-left">Who I Am</h2>
+                <p>Greetings! My name is John. I’m a savvy web developer with 20 plus years of industry experience creating professional websites for clients. I started creating websites as a hobby back in the mid 90’s and have enjoyed programming and publishing them to the world ever since.</p>
+                <p>I am proficient in WordPress custom website development and maintenance using PHP, HTML5, CSS3, SASS, Javascript, jQuery, ACF, and other tools. I build well structured, maintainable, responsive websites and emails using best practices. I am also proficient in graphic and web design using the Adobe Creative Suite programs. I have several years of experience using numerous CRM and email marketing systems. I have extensive experience setting up hosting for websites, website security, and ongoing maintenance and management.</p>
+                <p>In addition to building websites, I enjoy playing guitar, running, swimming, configuring and fixing electronics, listening to music, watching movies and sports, and spending time with my family.</p>
+            </div>
+        </section>
+        <section id="skills" class="flex flex-col flex-wrap items-center lg:flex-row lg:items-start xl:flex-col border-l-1 border-gray-200 col-span-1 xl:row-span-3 px-5 py-15 gap-x-6 gap-y-11 xl:gap-x-0">
+            <h2 class="relative text-center z-10 w-full">Skills</h2>
+            <div class="container md skill-card flex-1 xl:flex-initial border border-gray-500 rounded-lg">
+                <div class="border border-gray-500 bg-gray-200 card-icon text-center"><i class="fa-solid fa-computer"></i></div>
+                <h3 class="rounded-t-lg bg-yellow-500 text-white px-7 pt-8 pb-3 text-center">Technical Skills</h3>
+                <ul class="px-7 py-5 w-full">
+                    <li>PHP</li>
+                    <li>HTML5</li>
+                    <li>CSS3 / SASS</li>
+                    <li>Javascript / jQuery</li>
+                    <li>React JS</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>ASP / ASP.NET</li>
+                    <li>WP Theme Dev</li>
+                    <li>Responsive Site / Email Dev</li>
+                    <li>UX Design / Best Practices</li>
+                </ul>
+            </div>
+            <div class="container md skill-card flex-1 xl:flex-initial border border-gray-500 rounded-lg">
+                <div class="border border-gray-500 bg-gray-200 card-icon text-center"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3 class="rounded-t-lg bg-blue-500 text-white px-7 pt-8 pb-3 text-center">Tools/Software</h3>
+                <ul class="px-7 py-5 w-full">
+                    <li>MS Visual Studio</li>
+                    <li>WordPress / WPEngine</li>
+                    <li>Shared and Private Hosting</li>
+                    <li>Microsoft Azure</li>
+                    <li>Marketo</li>
+                    <li>Adobe CS Products</li>
+                    <li>Canva</li>
+                    <li>Figma</li>
+                    <li>AIO WP Migration</li>
+                    <li>AIO WP Security</li>
+                    <li>Contact Form 7, Gravity Forms, etc.</li>
+                    <li>Gulp</li>
+                    <li>FTP Software (i.e. Filezilla)</li>
+                    <li>MS Teams</li>
+                </ul>
+            </div>
+            <div class="container md skill-card flex-1 xl:flex-initial border border-gray-500 rounded-lg">
+                <div class="border border-gray-500 bg-gray-200 card-icon text-center"><i class="fa-solid fa-book"></i></div>
+                <h3 class="rounded-t-lg bg-green-500 text-white px-7 pt-8 pb-3 text-center">Certifications/<br />Short Courses</h3>
+                <ul class="px-7 py-5 w-full">
+                    <li>Web Design Technical Certificate
+                        <ul>
+                            <li>WCTC<br><em>Pewaukee, WI</em></li>
+                        </ul>
+                    </li>
+                    <li>Dale Carnegie Training
+                        <ul>
+                        <li>Dale Carnegie HR and Public Speaking Course<br><em>West Allis, WI</em></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects" class="bg-gray-200 p-12 col-span-1 row-span-1 xl:col-span-3">
+            <div class="portfolio-list">
+                <h2>Projects</h2>
+                <p>Here is a short list of some of the websites that I’ve built.</p>
+                <ul>
+                    <li><a href="https://www.shopko.com/" target="_blank" rel="noopener">Shopko Optical Eye Care and Vision Centers</a></li>
+                    <li><a href="https://www.spotlessbrands.com/" target="_blank" rel="noopener">Spotless Brands – Revolutionizing the car wash industry</a></li>
+                    <li><a href="https://www.flagshipcarwash.com/" target="_blank" rel="noopener">Flagship Carwash – The Ultimate Car Wash Experience</a></li>
+                    <li><a href="https://www.okieautowash.com/" target="_blank" rel="noopener">Okie Express Auto Wash – Join Our Unlimited Car Wash Club (okieautowash.com)</a></li>
+                    <li><a href="https://www.bemiscontractgroup.com/" target="_blank" rel="noopener">Custom Injection Molding Company – Bemis Contract Group</a></li>
+                    <li><a href="https://www.ldvusa.com/" target="_blank" rel="noopener">Specialty Vehicles – Custom Specialty Vehicle Manufacturer – LDV (e-commerce – Tool Truck Parts and Accessories – LDV)</a></li>
+                    <li><a href="https://www.cwdusttech.com/" target="_blank" rel="noopener">Dust Collector Manufacturer | C&amp;W DustTech (e-commerce – Shop – C&amp;W DustTech)</a></li>
+                    <li><a href="https://cibcclearygull.com/" target="_blank" rel="noopener">CIBC Cleary Gull | Leading Middle-Market Investment Bank</a></li>
+                    <li><a href="http://theendeavourcorp.com/" target="_blank" rel="noopener">Commercial Development Real Estate Partners – Endeavour (theendeavourcorp.com)</a></li>
+                    <li><a href="https://www.silverrockconsulting.com/" target="_blank" rel="noopener">Global Management Consulting Firm | Silver Rock Consulting</a></li>
+                    <li><a href="https://www.sjobergtool.com/" target="_blank" rel="noopener">Metal Cutting and Forming – Sjoberg Tool</a></li>
+                    <li><a href="https://www.montesino.com/" target="_blank" rel="noopener">Pharmaceutical Packaging – Montesino</a></li>
+                    <li><a href="https://www.walkerforge.com/" target="_blank" rel="noopener">Closed Die Forgings – Forged Steel Parts Manufacturer | Walker Forge</a></li>
+                    <li><a href="https://trefoilgroup.com/" target="_blank" rel="noopener">Trefoil Group</a></li>
+                    <li><a href="https://www.kyuteaco.com/" target="_blank" rel="noopener">Kyushu Tea Company</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="container p-12 col-span-1 row-span-1 xl:col-span-3">
+            <div class="summary">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong>&nbsp;<a href="mailto:john.prudlow@outlook.com">john.prudlow@outlook.com</a><br>
+                <strong>LinkedIn:</strong>&nbsp;<a href="https://www.linkedin.com/in/john-prudlow-24447329/" target="_blank" rel="noopener">https://www.linkedin.com/in/john-prudlow-24447329/</a><br>
+                <strong>Github:</strong>&nbsp;<a href="https://github.com/john-prudlow">https://github.com/john-prudlow</a><br>
+                <strong>Resume:</strong>&nbsp;<a href="docs/Prudlow-Resume.pdf" target="_blank" rel="noopener">PDF</a></p>
+            </div>
+            <form class="pt-8">
+                <h3>For More Information, Fill Out The Form</h3>
+                <fieldset class="grid lg:grid-cols-2 py-6 gap-3">
+                    <input class="lg:col-span-1" type="text" id="first-name" name="first-name" aria-label="First Name" placeholder="First Name" required />
+                    <input class="lg:col-span-1" type="text" id="last-name" name="last-name" aria-label="Last Name" placeholder="Last Name" required />
+                    <input class="lg:col-span-2" type="email" id="name" name="name" aria-label="Email Address" placeholder="Email Address" required />
+                    <input class="lg:col-span-2" type="text" id="name" name="name" aria-label="Phone Number" placeholder="Phone Number" />
+                    <textarea class="lg:col-span-2" id="message" name="message" aria-label="Message" placeholder="What would you like to know?" class="resize"></textarea>
+                </fieldset>
+                <button onclick="loaderAnimation()" class="block cursor-pointer rounded-lg bg-blue-500 text-white px-8 py-3 uppercase">Submit</button>
+                <ul id="loader"><li class="loader-dot"></li><li class="loader-dot"></li><li class="loader-dot"></li><li class="loader-dot"></li><li class="loader-dot"></li></ul>
+            </form>
+        </section>
+    </main>
+    <footer class="border-t-1 border-gray-200 pt-12 px-20 pb-2 w-full">
+        <nav>
+            <ul class="flex font-semibold uppercase pb-12 gap-x-6 justify-center">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="social flex pb-6 gap-x-3 justify-center">
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+        <p class="copyright flex text-sm justify-center">Copyright &#169;2025</p>
+    </footer>
+    <script>
+        function toggleMenu(navBtn) {
+            const nav = document.getElementById('main-menu');
+            nav.classList.toggle('hidden');
+        }
+        function loaderAnimation() {
+            const dots = document.getElementById('loader');
+            dots.classList.toggle('on');
+        }
+    </script>
+</body>
+</html>
